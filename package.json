@@ -1,0 +1,26 @@
+{
+  "name": "slackbot",
+  "version": "1.0.0",
+  "description": "2022 mju likelion slackbot",
+  "main": "index.js",
+  "repository": "https://github.com/mju-likelion/Regigigas.git",
+  "author": "minjung <ypd06021@naver.com>",
+  "license": "MIT",
+  "scripts": {
+    "start": "src/index.ts"
+  },
+  "dependencies": {
+    "express": "^4.17.3",
+    "nodemon": "^2.0.15"
+  },
+  "devDependencies": {
+    "@typescript-eslint/eslint-plugin": "^5.18.0",
+    "@typescript-eslint/parser": "^5.18.0",
+    "eslint": "^7.32.0",
+    "eslint-config-airbnb-base": "^15.0.0",
+    "eslint-config-prettier": "^8.5.0",
+    "eslint-plugin-import": "^2.26.0",
+    "pretty-quick": "^3.1.3",
+    "typescript": "^4.6.3"
+  }
+}
