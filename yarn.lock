@@ -784,6 +784,11 @@ enquirer@^2.3.5:
   dependencies:
     ansi-colors "^4.1.1"
 
+env@^0.0.2:
+  version "0.0.2"
+  resolved "https://registry.yarnpkg.com/env/-/env-0.0.2.tgz#50c19f307b129a45845b6b686df5b39dd40d1cf0"
+  integrity sha1-UMGfMHsSmkWEW2tobfWzndQNHPA=
+
 es-abstract@^1.19.0, es-abstract@^1.19.1:
   version "1.19.2"
   resolved "https://registry.yarnpkg.com/es-abstract/-/es-abstract-1.19.2.tgz#8f7b696d8f15b167ae3640b4060670f3d054143f"

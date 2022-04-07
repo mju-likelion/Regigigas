@@ -1,0 +1,26 @@
+name: typecheck github actions
+on: [push, pull_request]
+jobs:
+  build:
+    strategy:
+      matrix:
+        node-version: [16.x, 17.x]
+
+    runs-on: macOS-latest # 배포 시 체크
+    name: "Type Check"
+
+    steps:
+      # ts type check
+      - name: Type Check
+        run: tsc --project ./src/index
+
+      # 실패 시 슬랙에 알림
+      # - name: Notify failure
+      #   uses: 8398a7/action-slack@v3
+      #   env:
+      #     SLACK_WEBHOOK_URL: ${{ secrets.SLACK_WEBHOOK_URL }}
+      #   with:
+      #     status: ${{ job.status }}
+      #     username: github-actions
+      #     channel: "#github"
+      #   if: failure()
