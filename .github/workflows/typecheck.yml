@@ -15,12 +15,16 @@ jobs:
         run: tsc --project ./src/index
 
       # 실패 시 슬랙에 알림
-      # - name: Notify failure
-      #   uses: 8398a7/action-slack@v3
-      #   env:
-      #     SLACK_WEBHOOK_URL: ${{ secrets.SLACK_WEBHOOK_URL }}
-      #   with:
-      #     status: ${{ job.status }}
-      #     username: github-actions
-      #     channel: "#github"
-      #   if: failure()
+      - name: Notify failure
+        uses: 8398a7/action-slack@v3
+        env:
+          SLACK_WEBHOOK_URL: ${{ secrets.SLACK_WEBHOOK_URL }} # required
+        with:
+          status: ${{ job.status }}
+          author_name: Github Action Test # default: 8398a7@action-slack
+          #username: github-actions
+          #fields: repo,message,commit,author,action,eventName,ref,workflow,job,took
+          channel: "#github"
+        if:
+          failure()
+          #always() # Pick up events even if the job fails or is canceled.v

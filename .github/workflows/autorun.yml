@@ -17,7 +17,7 @@ jobs:
       #     yarn build  # 명령어 확인
 
       # 실패시 슬랙 알림
-      # - name: Notify failure
+      # - name: action-slack
       #   uses: 8398a7/action-slack@v3
       #   env:
       #     SLACK_WEBHOOK_URL: ${{ secrets.SLACK_WEBHOOK_URL }}
