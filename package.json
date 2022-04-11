@@ -10,9 +10,15 @@
     "start": "nodemon src --exec swc-node src/index.ts"
   },
   "dependencies": {
+    "@slack/bolt": "^3.11.0",
+    "@slack/events-api": "^3.0.1",
+    "@types/sqlite3": "^3.1.8",
+    "date-fns": "^2.28.0",
     "dotenv": "^16.0.0",
     "express": "^4.17.3",
-    "nodemon": "^2.0.15"
+    "http": "^0.0.1-security",
+    "nodemon": "^2.0.15",
+    "sqlite3": "^5.0.2"
   },
   "devDependencies": {
     "@swc/cli": "^0.1.57",

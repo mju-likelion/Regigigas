@@ -22,8 +22,8 @@ jobs:
         with:
           status: ${{ job.status }}
           author_name: Github Action Test # default: 8398a7@action-slack
-          #username: github-actions
-          #fields: repo,message,commit,author,action,eventName,ref,workflow,job,took
+          username: github-actions
+          fields: repo,message,commit,author,action,eventName,ref,workflow,job,took
           channel: "#github"
         if:
           failure()
