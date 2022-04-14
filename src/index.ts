@@ -16,10 +16,17 @@ const app = new App({
   appToken: process.env.SLACK_APP_TOKEN, // add this
 });
 
-anonymousBot(app);
+// anonymousBot(app);
 // addBirthdayEvents(app);
+
+console.log("0");
+// Listens to incoming messages that contain "hello"
+app.message('hello', async ({ message, say }) => {
+  // say() sends a message to the channel where the event was triggered
+  await say(`Hey there <@${message.user}>!`);
+});
 
 (async () => {
   await app.start(port);
-  // console.log("⚡️ Bolt app is running!");
+  console.log("⚡️ Bolt app is running!");
 })();

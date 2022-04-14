@@ -6,13 +6,13 @@ import { App } from "@slack/bolt";
 //   await say(`Hey there <@${message.user}>!`);
 // });
 
-function anonymousBot(app: App) {
-  app.message('hello', async ({ message, say }) => {
-    // console.log("흑");
-    // say() sends a message to the channel where the event was triggered
-    await say("제발요 ㅠ");
-  });
-};
+// function anonymousBot(app: App) {
+//   app.message('hello', async ({ message, say }) => {
+//     // console.log("흑");
+//     // say() sends a message to the channel where the event was triggered
+//     await say("제발요 ㅠ");
+//   });
+// };
 
 // function anonymousBot(app: App) {
 //   app.message("익명봇", async ({ say }) => {
