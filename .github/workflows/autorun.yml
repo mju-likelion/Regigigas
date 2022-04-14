@@ -6,7 +6,7 @@ jobs:
       matrix:
         node-version: [16.x, 17.x]
 
-    runs-on: macOS-latest # 배포 시 체크
+    runs-on: ubuntu-latest # 배포 시 체크
     name: "autorun"
 
     steps:
