@@ -1,6 +1,8 @@
 import { App } from "@slack/bolt";
 import dotenv from "dotenv";
 
+import introduce from "./introduce";
+
 // import anonymousBot from "./ anonymousBot";
 
 dotenv.config();
@@ -14,14 +16,11 @@ const app = new App({
 });
 
 // anonymousBot(app);
+introduce(app);
 
-app.message('hi parrot', async ({ message, say }) => {
-  // say() sends a message to the channel where the event was triggered
-  // @ts-expect-error
-  await say(`Hey there <@${message.user}>!`);
-});
 
 (async () => {
   await app.start(port);
+  // @ts-expect-error
   console.log("⚡️ Bolt app is running!  ");
 })();
