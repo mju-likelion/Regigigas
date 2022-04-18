@@ -1,6 +1,10 @@
 import { App } from "@slack/bolt";
 
     function introduce(app: App) {
+        app.message('parrot!', async ({ say }) => {
+            await say(`왜불러`);
+        });
+
         app.message('hello parrot', async ({ message, say }) => {
         // say() sends a message to the channel where the event was triggered
         await say({
