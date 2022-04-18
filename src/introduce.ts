@@ -31,7 +31,7 @@ import { App } from "@slack/bolt";
     app.action('button_click', async ({ body, ack, say }) => {
         // Acknowledge the action
         await ack();
-        await say(`<@${body.user.id}> 안녕! , parrot의 기능은`);
+        await say(`<@${body.user.id}> 안녕! , parrot의 기능은 익명으로 메세지 보내기 !`);
     });
 }
 
