@@ -18,9 +18,10 @@ const app = new App({
 // anonymousBot(app);
 introduce(app);
 
-
 (async () => {
   await app.start(port);
   // @ts-expect-error
   console.log("⚡️ Bolt app is running!  ");
 })();
+
+// test for branch rule
