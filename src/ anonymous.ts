@@ -4,7 +4,13 @@ import { App } from "@slack/bolt";
 
 
     function anonymous(app: App) {
-        app.message('anony', async ({ message, say }) => {
+        // 메세지 그대로 응답
+        app.message('anony1', async ({ message, say }) => {
+            // @ts-expect-error
+            await say(`${message.text}`);
+        });
+        // 메세지 익명으로 응답
+        app.message('anony2', async ({ message, say }) => {
             // @ts-expect-error
             await say(`${message.text}`);
         });
