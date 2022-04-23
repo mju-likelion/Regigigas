@@ -4,6 +4,7 @@ import dotenv from "dotenv";
 // 여기에 각자 파일 import 해와주세요.(알파벳 순으로)
 import anonymous from "./ anonymous";
 import introduce from "./introduce";
+import slash from "./lib/slash"
 
 dotenv.config();
 const port = Number(process.env.PORT) || 3000;
@@ -18,6 +19,7 @@ const app = new App({
 // 여기 아래와 같은 형식으로 본인꺼 추가해주세요.
 introduce(app);
 anonymous(app);
+slash(app);
 
 (async () => {
   await app.start(port);
