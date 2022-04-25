@@ -1,5 +1,6 @@
 name: autorun github actions # 배포 자동화
-on: [pull_request]
+on:
+  pull_request: [develop]
 jobs:
   build:
     strategy:

@@ -1,5 +1,9 @@
 name: typecheck github actions
-on: [push, pull_request]
+on:
+  push:
+    branches: [master, develop]
+  pull_request:
+    branches: [develop, feature/**]
 jobs:
   build:
     strategy:
