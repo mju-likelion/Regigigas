@@ -2,7 +2,7 @@ import { App } from "@slack/bolt";
 import dotenv from "dotenv";
 
 // 여기에 각자 파일 import 해와주세요.(알파벳 순으로)
-import anonymous from "./ anonymous";
+import anonymous from "./anonymous";
 import introduce from "./introduce";
 
 dotenv.config();

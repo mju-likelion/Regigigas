@@ -3,6 +3,7 @@ import { App } from "@slack/bolt";
     function introduce(app: App) {
         app.message('자비스!', async ({ say }) => {
             await say(`왜불러`);
+            // 랜덤 응답 - "전 좀 쉬어야겠어요."
         });
 
         app.message('안녕 자비스', async ({ message, say }) => {
@@ -14,7 +15,7 @@ import { App } from "@slack/bolt";
                 "text": {
                 "type": "mrkdwn",
                 // @ts-expect-error
-                "text": `안녕하세요 <@${message.user}>!`,
+                "text": `안녕하세요 <@${message.user}>! 저는 아이언맨의 인공지능 비서, 자비스입니다.`,
                 },
                 "accessory": {
                 "type": "button",
@@ -32,10 +33,10 @@ import { App } from "@slack/bolt";
     });
 
     // jarvis 기능 리스트 추가하기
-    app.action('button_click', async ({ body, ack, say }) => {
+    app.action('button_click', async ({ ack, say }) => {
         // Acknowledge the action
         await ack();
-        await say(`<@${body.user.id}> 안녕! , 자비스는 익명으로 채널에 게시할 수 있습니다!`);
+        await say(`자비스를 통해 익명으로 채널에 게시할 수 있습니다!`);
     });
 }
 
