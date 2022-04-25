@@ -1,11 +1,11 @@
 import { App } from "@slack/bolt";
 
     function introduce(app: App) {
-        app.message('parrot!', async ({ say }) => {
+        app.message('자비스!', async ({ say }) => {
             await say(`왜불러`);
         });
 
-        app.message('hello parrot', async ({ message, say }) => {
+        app.message('안녕 자비스', async ({ message, say }) => {
         // say() se–nds a message to the channel where the event was triggered
         await say({
             blocks: [
@@ -14,7 +14,7 @@ import { App } from "@slack/bolt";
                 "text": {
                 "type": "mrkdwn",
                 // @ts-expect-error
-                "text": `oh hello <@${message.user}>!`,
+                "text": `안녕하세요 <@${message.user}>!`,
                 },
                 "accessory": {
                 "type": "button",
@@ -31,11 +31,11 @@ import { App } from "@slack/bolt";
         });
     });
 
-    // parrot 기능 리스트 추가하기
+    // jarvis 기능 리스트 추가하기
     app.action('button_click', async ({ body, ack, say }) => {
         // Acknowledge the action
         await ack();
-        await say(`<@${body.user.id}> 안녕! , parrot의 기능은 익명으로 메세지 보내기 !`);
+        await say(`<@${body.user.id}> 안녕! , 자비스는 익명으로 채널에 게시할 수 있습니다!`);
     });
 }
 
