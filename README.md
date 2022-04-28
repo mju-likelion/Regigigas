@@ -16,6 +16,11 @@ Jarvis는 멋쟁이사자처럼 명지대 10기 슬랙봇입니다.
 ```
 `/자비스 <보낼 내용>` 명령어로 채널에 익명 메시지를 전송할 수 있습니다
 ```
+<div>
+<img width="408" alt="image" src="https://user-images.githubusercontent.com/78525973/165677517-fa0caf8e-0b35-4eb0-9e7f-bcb39b430186.png">
+<img width="361" alt="image" src="https://user-images.githubusercontent.com/78525973/165677748-7416f97a-356f-4484-ba41-05230b36a901.png">
+<img width="229" alt="image" src="https://user-images.githubusercontent.com/78525973/165677497-b561de85-0441-4544-b89e-cf1970074183.png"></div>
+
 
 
 ### 주사위 게임
@@ -24,6 +29,10 @@ Jarvis는 멋쟁이사자처럼 명지대 10기 슬랙봇입니다.
 `자비스 던져` 명령어를 통해 0 ~ 100 까지 숫자 중 랜덤한 값을 출력합니다.
 또한, 주사위 범위에 따라 슬랙봇이 다양한 멘트를 출력합니다.
 ```
+
+### 자비스 기능 보기
+<img width="857" alt="image" src="https://user-images.githubusercontent.com/78525973/165677268-2f60a01d-cad7-453e-8549-a143c4c551b6.png">
+
 
 ## 🛠 Tech Stack
 - Node.js
