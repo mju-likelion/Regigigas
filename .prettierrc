@@ -4,13 +4,5 @@
     "tabWidth": 2,
     "semi": true,
     "singleQuote": true, 
-    "trailingComma": "all",
-    "overrides": [ 
-      {
-        "files": ".eslintrc.js",
-        "options": {
-          "quoteProps": "preserve"
-        }
-      }
-    ]
+    "trailingComma": "all"
   }

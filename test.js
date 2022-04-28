@@ -4,4 +4,4 @@
 //     const no_semi = 500
 // 		console.log('hello world!')
 // }
-// init(); 
+// init();
