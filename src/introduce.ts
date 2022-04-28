@@ -3,7 +3,7 @@ import { App } from "@slack/bolt";
     function introduce(app: App) {
         app.message('자비스!', async ({ say }) => {
             await say(`왜불러`);
-            // 랜덤 응답 - "전 좀 쉬어야겠어요."
+            // 추가 구현 - 랜덤 응답
         });
 
         app.message('안녕 자비스', async ({ message, say }) => {
@@ -21,7 +21,7 @@ import { App } from "@slack/bolt";
                 "type": "button",
                 "text": {
                     "type": "plain_text",
-                    "text": "Click Me",
+                    "text": "기능보기",
                 },
                 "action_id": "button_click", // This will act as a unique identifier for the button so your app can specify what action it wants to respond to.
                 },
@@ -36,7 +36,7 @@ import { App } from "@slack/bolt";
     app.action('button_click', async ({ ack, say }) => {
         // Acknowledge the action
         await ack();
-        await say(`자비스를 통해 익명으로 채널에 게시할 수 있습니다!`);
+        await say(`익명 봇 메시지, 주사위 게임, 예정(생일 축하 알림, 자비스 부르기, 점심 메뉴 추천, 날씨보기, 사다리타기 등)`);
     });
 }
 
