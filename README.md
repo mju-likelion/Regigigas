@@ -48,3 +48,29 @@ Jarvis는 멋쟁이사자처럼 명지대 10기 슬랙봇입니다.
 |refactor|리팩터링|
 |chor|패키지 설치, 변수명 변경과 같이 기능에 영향을 끼치지 않는 작업|
 |docs|주석 추가 및 삭제, README 작성 등|
+
+</br>
+
+## 📁 폴더구조 📁
+```markdown
+.
+├── src                   # has all the integrations, features
+│   ├── anonymous.ts      #
+│   ├── introduce.ts      #
+│   ├── 
+│   ├── 
+│   ├── 
+│   └── index.ts          # starts and configures the application
+│
+│
+└── .github/workflow      # github actions
+│   ├── typecheck.yml     # typescript type check
+│   └── auto.yml          # automatic
+│    
+├── .swcrc                # swc config
+├── .eslintrc.            # ESLint config
+├── package.json
+├──    .db                # SQLite3
+├── README.md
+└── tsconfig.json         # TypeScript config
+```
