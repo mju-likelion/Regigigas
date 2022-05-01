@@ -17,6 +17,7 @@ jobs:
       # ts type check
       - name: Type Check
         run: |
+          ls -alF
           yarn install
           tsc --project src/index.ts
 
