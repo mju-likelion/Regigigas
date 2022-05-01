@@ -7,7 +7,6 @@ import anonymous from "./anonymous";
 import introduce from "./introduce";
 
 dotenv.config();
-// const port = Number(process.env.PORT) || 3000;
 // Initialize your custom receiver  // 타입 지정 (!) - undefind 아님 //기본값 주기
 if (!process.env.SLACK_SIGNING_SECRET) {
   throw Error("some error")

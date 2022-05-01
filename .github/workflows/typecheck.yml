@@ -9,13 +9,15 @@ jobs:
       matrix:
         node-version: [16.x, 17.x]
 
-    runs-on: macOS-latest # 배포 시 체크
+    runs-on: ubuntu-latest
     name: "Type Check"
 
     steps:
       # ts type check
       - name: Type Check
-        run: tsc --project ./src/index
+        run: |
+          yarn install
+          tsc --project ./src/index
 
       # 실패 시 슬랙에 알림
       - name: Notify failure
