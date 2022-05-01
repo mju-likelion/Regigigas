@@ -8,13 +8,16 @@ jobs:
   build:
     strategy:
       matrix:
-        node-version: [17.x]
+        node-version: [16.x]
 
     runs-on: ubuntu-latest
     name: "Type Check"
 
     steps:
       - uses: actions/checkout@v3
+      - uses: actions/setup-node@v3
+        with:
+          node-version: '16'
       # ts type check
       - name: Type Check
         run: |
