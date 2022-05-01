@@ -2,6 +2,7 @@ import { App } from "@slack/bolt";
 import dotenv from "dotenv";
 
 import introduce from "./introduce";
+import randomNumber from "./randomNumber";
 
 dotenv.config();
 const port = Number(process.env.PORT) || 3000;
@@ -14,6 +15,7 @@ const app = new App({
 });
 
 introduce(app);
+randomNumber(app);
 
 (async () => {
   await app.start(port);
