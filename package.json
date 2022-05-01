@@ -8,7 +8,8 @@
   "license": "MIT",
   "scripts": {
     "dev": "nodemon -e ts,js,json src --exec swc-node src/index",
-    "check": "tsc index.ts --watch"
+    "check": "tsc index.ts --watch",
+    "deploy": "serverless deploy"
   },
   "dependencies": {
     "@slack/bolt": "^3.11.0",
