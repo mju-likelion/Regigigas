@@ -10,7 +10,7 @@ jobs:
       matrix:
         node-version: [17.x]
 
-    runs-on: macOS-latest # 배포 시 체크
+    runs-on: ubuntu-latest
     name: "Type Check"
 
     steps:
