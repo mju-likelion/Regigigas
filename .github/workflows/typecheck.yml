@@ -18,7 +18,7 @@ jobs:
       - name: Type Check
         run: |
           yarn install
-          tsc --project ./src/index
+          tsc --project src/index.ts
 
       # 실패 시 슬랙에 알림
       - name: Notify failure
