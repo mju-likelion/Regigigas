@@ -1,9 +1,7 @@
 import { App } from "@slack/bolt";
 import dotenv from "dotenv";
 
-import introduce from "./introduce";
-
-// import anonymousBot from "./ anonymousBot";
+import jarvisCalling from "./jarvisCalling";
 
 dotenv.config();
 const port = Number(process.env.PORT) || 3000;
@@ -15,9 +13,7 @@ const app = new App({
   appToken: process.env.SLACK_APP_TOKEN, // add this
 });
 
-// anonymousBot(app);
-introduce(app);
-
+jarvisCalling(app);
 
 (async () => {
   await app.start(port);
