@@ -1,18 +1,29 @@
 name: typecheck github actions
-on: [push, pull_request]
+on:
+  push:
+    branches: [master, develop]
+  pull_request:
+    branches: [develop, feature/**]
 jobs:
   build:
     strategy:
       matrix:
-        node-version: [16.x, 17.x]
+        node-version: [16.x]
 
-    runs-on: macOS-latest # 배포 시 체크
+    runs-on: ubuntu-latest
     name: "Type Check"
 
     steps:
+      - uses: actions/checkout@v3
+      - uses: actions/setup-node@v3
+        with:
+          node-version: '16'
       # ts type check
       - name: Type Check
-        run: tsc --project ./src/index
+        run: |
+          ls -alF
+          yarn install
+          tsc --project src/index.ts
 
       # 실패 시 슬랙에 알림
       - name: Notify failure

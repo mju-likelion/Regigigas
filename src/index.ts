@@ -1,6 +1,8 @@
 import { App } from "@slack/bolt";
 import dotenv from "dotenv";
 
+import introduce from "./introduce";
+import randomNumber from "./randomNumber";
 import jarvisCalling from "./jarvisCalling";
 
 dotenv.config();
@@ -13,10 +15,10 @@ const app = new App({
   appToken: process.env.SLACK_APP_TOKEN, // add this
 });
 
+introduce(app);
+randomNumber(app);
 jarvisCalling(app);
 
 (async () => {
   await app.start(port);
-  // @ts-expect-error
-  console.log("⚡️ Bolt app is running!  ");
 })();

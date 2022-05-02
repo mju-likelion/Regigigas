@@ -3,7 +3,7 @@
       "es2021": true,
       "node": true
     },
-    "extends": ["airbnb-base", "prettier"],
+    "extends": ["eslint:recommended","airbnb-base", "plugin:prettier/recommended"],
     "parser": "@typescript-eslint/parser",
     "parserOptions": {
       "ecmaVersion": "latest",
@@ -38,6 +38,12 @@
       ],
       "prefer-destructuring": ["error", { "array": true, "object": true }, { "enforceForRenamedProperties": true }],
       "spaced-comment": ["error", "always"],
+      "prettier/prettier": [
+        "error",
+          {
+            "endOfLine": "auto"
+          }
+      ],
       "import/extensions": ["error", "never"],
       "import/no-unresolved": "off",
       "import/order": [
