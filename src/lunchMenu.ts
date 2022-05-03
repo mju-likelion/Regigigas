@@ -1,6 +1,6 @@
 import { App } from '@slack/bolt';
-import gangnam from './gangnam.json';
-import yongin from './yongin.json';
+import gangnam from './lunchList/gangnam.json';
+import yongin from './lunchList/yongin.json';
 
 const lunchMenu = (app: App) => {
   app.message('강남 뭐 먹지', async ({ say }) => {
