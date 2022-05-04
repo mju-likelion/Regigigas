@@ -11,7 +11,7 @@ jobs:
         node-version: [16.x]
 
     runs-on: ubuntu-latest
-    name: "Type Check"
+    name: 'Type Check'
 
     steps:
       - uses: actions/checkout@v3
@@ -21,7 +21,6 @@ jobs:
       # ts type check
       - name: Type Check
         run: |
-          ls -alF
           yarn install
           tsc --project src/index.ts
 
@@ -35,7 +34,7 @@ jobs:
           author_name: Github Action Test # default: 8398a7@action-slack
           username: github-actions
           fields: repo,message,commit,author,action,eventName,ref,workflow,job,took
-          channel: "#github"
+          channel: '#github'
         if:
           failure()
           #always() # Pick up events even if the job fails or is canceled.v
