@@ -95,3 +95,4 @@ Jarvis는 멋쟁이사자처럼 명지대 10기 슬랙봇입니다.
 |박소연|생일 축하 알림|
 |배한조|주사위 게임|
 # slackbot-test
+# slackbot-test
