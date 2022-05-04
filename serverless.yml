@@ -1,3 +1,5 @@
+org: ypd06021
+console: true
 service: serverless-bolt-js
 frameworkVersion: "3"
 provider:

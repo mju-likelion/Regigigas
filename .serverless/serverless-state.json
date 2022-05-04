@@ -177,7 +177,7 @@
                 "S3Bucket": {
                   "Ref": "ServerlessDeploymentBucket"
                 },
-                "S3Key": "serverless/serverless-bolt-js/dev/1651526597422-2022-05-02T21:23:17.422Z/serverless-bolt-js.zip"
+                "S3Key": "serverless/serverless-bolt-js/dev/1651689783330-2022-05-04T18:43:03.330Z/serverless-bolt-js.zip"
               },
               "Handler": "app.handler",
               "Runtime": "nodejs12.x",
@@ -201,14 +201,14 @@
               "SlackLogGroup"
             ]
           },
-          "SlackLambdaVersionotNQsMswid441C9kzDyhyGlFN8sP20R1AEq9aewo": {
+          "SlackLambdaVersionz0w2pw7n6NSmIkWsfPdNZKIVlpQqCaNbk1LipmtChvI": {
             "Type": "AWS::Lambda::Version",
             "DeletionPolicy": "Retain",
             "Properties": {
               "FunctionName": {
                 "Ref": "SlackLambdaFunction"
               },
-              "CodeSha256": "RGNvK0bHvm/Ql+IOyEFPqGMYG/mjgL9woYaqGsl9L+I="
+              "CodeSha256": "KUjSk+AURqLD7CuzDuxUk3RjLCt63OSo1NxdwnyaPBY="
             }
           },
           "ApiGatewayRestApi": {
@@ -296,7 +296,7 @@
               "SlackLambdaPermissionApiGateway"
             ]
           },
-          "ApiGatewayDeployment1651526586812": {
+          "ApiGatewayDeployment1651689776756": {
             "Type": "AWS::ApiGateway::Deployment",
             "Properties": {
               "RestApiId": {
@@ -358,7 +358,7 @@
           "SlackLambdaFunctionQualifiedArn": {
             "Description": "Current Lambda function version",
             "Value": {
-              "Ref": "SlackLambdaVersionotNQsMswid441C9kzDyhyGlFN8sP20R1AEq9aewo"
+              "Ref": "SlackLambdaVersionz0w2pw7n6NSmIkWsfPdNZKIVlpQqCaNbk1LipmtChvI"
             },
             "Export": {
               "Name": "sls-serverless-bolt-js-dev-SlackLambdaFunctionQualifiedArn"
@@ -498,7 +498,7 @@
         "timeout": 6,
         "runtime": "nodejs12.x",
         "vpc": {},
-        "versionLogicalId": "SlackLambdaVersionotNQsMswid441C9kzDyhyGlFN8sP20R1AEq9aewo"
+        "versionLogicalId": "SlackLambdaVersionz0w2pw7n6NSmIkWsfPdNZKIVlpQqCaNbk1LipmtChvI"
       }
     },
     "configValidationMode": "warn",
@@ -521,7 +521,7 @@
     "artifact": "/Users/kangminjeong/Desktop/Regigigas/.serverless/serverless-bolt-js.zip"
   },
   "package": {
-    "artifactDirectoryName": "serverless/serverless-bolt-js/dev/1651526597422-2022-05-02T21:23:17.422Z",
+    "artifactDirectoryName": "serverless/serverless-bolt-js/dev/1651689783330-2022-05-04T18:43:03.330Z",
     "artifact": "serverless-bolt-js.zip"
   }
 }

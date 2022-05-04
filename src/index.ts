@@ -39,3 +39,5 @@ export const handler = async (event: AwsEvent, context: any, callback: AwsCallba
   const handle = await awsLambdaReceiver.start();
   return handle (event, context, callback);
 }
+
+console.log("RUN");
