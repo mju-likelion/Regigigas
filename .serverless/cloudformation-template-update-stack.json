@@ -161,7 +161,7 @@
           "S3Bucket": {
             "Ref": "ServerlessDeploymentBucket"
           },
-          "S3Key": "serverless/serverless-bolt-js/dev/1651427410265-2022-05-01T17:50:10.265Z/serverless-bolt-js.zip"
+          "S3Key": "serverless/serverless-bolt-js/dev/1651526597422-2022-05-02T21:23:17.422Z/serverless-bolt-js.zip"
         },
         "Handler": "app.handler",
         "Runtime": "nodejs12.x",
@@ -171,7 +171,7 @@
         "Environment": {
           "Variables": {
             "SLACK_SIGNING_SECRET": "b11fb984f800edc13fee5fed0ebd451f",
-            "SLACK_BOT_TOKEN": "xoxb-3266801481331-3394002262099-2cMvziXq9DMw3jND4mToYf92"
+            "SLACK_BOT_TOKEN": "xoxb-3266801481331-3394002262099-sY630bsfYyhCH4kt5I68gqKf"
           }
         },
         "Role": {
@@ -185,14 +185,14 @@
         "SlackLogGroup"
       ]
     },
-    "SlackLambdaVersioneOWpaokq81Se0hbCxg9zRYSG9Dc5DN1vrpCSAXCkmWk": {
+    "SlackLambdaVersionotNQsMswid441C9kzDyhyGlFN8sP20R1AEq9aewo": {
       "Type": "AWS::Lambda::Version",
       "DeletionPolicy": "Retain",
       "Properties": {
         "FunctionName": {
           "Ref": "SlackLambdaFunction"
         },
-        "CodeSha256": "Urp74P7zH5dqs0rhcVjLqC0YpltrDwJ2J39zmTxeRBI="
+        "CodeSha256": "RGNvK0bHvm/Ql+IOyEFPqGMYG/mjgL9woYaqGsl9L+I="
       }
     },
     "ApiGatewayRestApi": {
@@ -280,7 +280,7 @@
         "SlackLambdaPermissionApiGateway"
       ]
     },
-    "ApiGatewayDeployment1651427397203": {
+    "ApiGatewayDeployment1651526586812": {
       "Type": "AWS::ApiGateway::Deployment",
       "Properties": {
         "RestApiId": {
@@ -342,7 +342,7 @@
     "SlackLambdaFunctionQualifiedArn": {
       "Description": "Current Lambda function version",
       "Value": {
-        "Ref": "SlackLambdaVersioneOWpaokq81Se0hbCxg9zRYSG9Dc5DN1vrpCSAXCkmWk"
+        "Ref": "SlackLambdaVersionotNQsMswid441C9kzDyhyGlFN8sP20R1AEq9aewo"
       },
       "Export": {
         "Name": "sls-serverless-bolt-js-dev-SlackLambdaFunctionQualifiedArn"
