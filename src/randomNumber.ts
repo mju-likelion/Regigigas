@@ -23,13 +23,13 @@ const reactionEvents = [
   },
   {
     id: 'notbad',
-    text: ['뭐..네 :nodnod:', '아깝네요 :crying:', '재도전 합시다 우리 :eyes:'],
+    text: ['뭐..나쁘지 않네요 :nodnod:', '아깝네요 :crying:', '재도전 하시겠어요? :eyes:'],
   },
   {
     id: 'normal',
     text: [
       '이정도면 잘 나온거죠 :smile:',
-      '재도전 하시겠어요? :thinking__face:',
+      '뭘 기대하신 건가요? :thinking__face:',
       '평범하네요 :meow_code:',
     ],
   },
@@ -43,11 +43,7 @@ const reactionEvents = [
   },
   {
     id: 'excellent',
-    text: [
-      '오늘 로또 각이에요 :daebak:',
-      '미쳤다 :crazy:',
-      '잘했죠? 빨리 칭찬해주세요 :meow_dundundun:',
-    ],
+    text: ['오늘 로또 각이에요 :daebak:', '미쳤다 :crazy:', '대박.. 높은 점수가 나왔어요 :crazy:'],
   },
 ];
 
@@ -58,8 +54,8 @@ const reaction = (dice: number): string => {
   return activeEvent?.text[actionEvent] || 'reaction error';
 };
 
-const randomNunber = (app: App) => {
-  app.message('자비스 던져', async ({ message, say }) => {
+const randomNumber = (app: App) => {
+  app.message(/자비스 던져/, async ({ message, say }) => {
     const diceValues = randomValue();
     let answer: string = '';
 
@@ -67,10 +63,10 @@ const randomNunber = (app: App) => {
       answer = `명령을 거부합니다 :saygoodbye: :나: :가:`;
     } else if (diceValues === 100) {
       // @ts-expect-error
-      answer = `킹갓제네럴마제스틱 <@${message.user}> :meow_wow: [${diceValues}]`;
+      answer = `킹갓제네럴마제스틱 <@${message.user}> :meow_wow: :100_rainbow: [${diceValues}]`;
     } else answer = `${reaction(diceValues)} [${diceValues}]`;
     await say(answer);
   });
 };
 
-export default randomNunber;
+export default randomNumber;
