@@ -17,6 +17,7 @@
     "date-fns": "^2.28.0",
     "dotenv": "^16.0.0",
     "express": "^4.17.3",
+    "node-schedule": "^2.1.0",
     "sqlite3": "^5.0.2"
   },
   "devDependencies": {
@@ -24,6 +25,7 @@
     "@swc/core": "^1.2.164",
     "@swc/register": "^0.1.10",
     "@types/node": "^17.0.23",
+    "@types/node-schedule": "^2.1.0",
     "@types/sqlite3": "^3.1.8",
     "@typescript-eslint/eslint-plugin": "^5.18.0",
     "@typescript-eslint/parser": "^5.18.0",
