@@ -1,6 +1,8 @@
 import { App, AwsLambdaReceiver } from "@slack/bolt";
 import { AwsCallback, AwsEvent } from "@slack/bolt/dist/receivers/AwsLambdaReceiver";
 import dotenv from "dotenv";
+import { application } from "express";
+
 
 // 여기에 각자 파일 import 해와주세요.(알파벳 순으로)
 import anonymous from "./anonymous";
@@ -34,10 +36,10 @@ const app = new App({
 introduce(app);
 anonymous(app);
 
-
 export const handler = async (event: AwsEvent, context: any, callback: AwsCallback) => {
   const handle = await awsLambdaReceiver.start();
   return handle (event, context, callback);
 }
 
-console.log("RUN");
+console.log("RUN-test");
+

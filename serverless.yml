@@ -6,7 +6,7 @@ provider:
   name: aws
   runtime: nodejs12.x
   # stage: ${env:STAGE}
-  # region: ${env:AWS_REGION}
+  region: ap-northeast-2
   environment:
     SLACK_SIGNING_SECRET: ${env:SLACK_SIGNING_SECRET}
     SLACK_BOT_TOKEN: ${env:SLACK_BOT_TOKEN}
