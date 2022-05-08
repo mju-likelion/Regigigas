@@ -6,21 +6,11 @@ let jarvisAnswer: string = '';
 
 // 자비스 시간 계산기
 const jarvisTime = (h: number): string => {
-  if (h >= 0 && h <= 6) {
-    return '새벽 코딩하셔야죠 :가보자고:';
-  }
-  if (h >= 7 && h <= 11) {
-    return '일어나자마자 하는 코딩은 사고력 향상에 도움이 됩니다 :아하:';
-  }
-  if (h >= 12 && h <= 14) {
-    return '점심 먹으면서 코딩하기 딱 좋네요 :샌드위치:';
-  }
-  if (h >= 15 && h <= 19) {
-    return '오후 코딩 달리셔야죠 :gogoo:';
-  }
-  if (h >= 20 && h <= 23) {
-    return '밤샘코딩 하러가야죠? :fire_gabojago:';
-  }
+  if (h >= 0 && h <= 6) return '새벽 코딩하셔야죠 :가보자고:';
+  if (h >= 7 && h <= 11) return '일어나자마자 하는 코딩은 사고력 향상에 도움이 됩니다 :아하:';
+  if (h >= 12 && h <= 14) return '점심 먹으면서 코딩하기 딱 좋네요 :샌드위치:';
+  if (h >= 15 && h <= 19) return '오후 코딩 달리셔야죠 :gogoo:';
+  if (h >= 20 && h <= 23) return '밤샘코딩 하러가야죠? :fire_gabojago:';
   return '몇 시인지 모르겠네요 재부팅해주세요 :loading:';
 };
 
@@ -58,7 +48,7 @@ const jarvisCalling = (app: App) => {
     await say(`${hours}시 입니다. ${jarvisAnswer}`);
   });
 
-  app.message('자비스 뭐할까?', async ({ say }) => {
+  app.message(/자비스 뭐할까/, async ({ say }) => {
     const randomNum: number = Math.floor(Math.random() * 3);
     jarvisAnswer = jarvisDoing(randomNum);
     await say(`${jarvisAnswer}`);
