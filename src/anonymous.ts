@@ -1,9 +1,14 @@
 import { App } from '@slack/bolt';
 
 function anonymous(app: App) {
-  // 채널에 익명으로 게시
-  app.command('/자비스', async ({ command, say }) => {
-    await say(`${command.text}`);
+  app.command('/자비스', async ({ command, ack, logger, say }) => {
+    try {
+      await say(`${command.text}`);
+      await ack();
+    } catch (e) {
+      logger.error(e);
+      await ack();
+    }
   });
 }
 
