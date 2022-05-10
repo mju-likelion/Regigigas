@@ -24,19 +24,8 @@ const jarvisDoing = (r: number): string => {
 
 const jarvisCalling = (app: App) => {
   // "자비스"로 끝나는 명령어에만 반응하기
-  app.message(/자비스$/, async ({ message, say }) => {
-    await say({
-      blocks: [
-        {
-          type: 'section',
-          text: {
-            type: 'mrkdwn',
-            // @ts-expect-error
-            text: `<@${message.user}>! 말씀하세요`,
-          },
-        },
-      ],
-    });
+  app.message(/자비스 나와/, async ({ message, say }) => {
+    await say('네?');
   });
 
   app.message(/자비스 울어/, async ({ say }) => {
