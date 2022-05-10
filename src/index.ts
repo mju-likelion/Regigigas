@@ -5,6 +5,7 @@ import dotenv from 'dotenv';
 import anonymous from './anonymous';
 import introduce from './introduce';
 import randomNumber from './randomNumber';
+import weather from './weather';
 
 dotenv.config();
 const port = 3000;
@@ -20,6 +21,7 @@ const app = new App({
 anonymous(app);
 introduce(app);
 randomNumber(app);
+weather(app);
 
 (async () => {
   await app.start(port);
