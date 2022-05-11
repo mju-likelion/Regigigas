@@ -12,7 +12,7 @@ const lunchMenu = (app: App) => {
       const pickedGangnam = Math.floor(Math.random() * gangnam.length);
       const gangnamRestaurant = gangnam[pickedGangnam] || [];
       await say(
-        `오늘 점심은 ${gangnamRestaurant.gangnamName} 어때요? /n ${gangnamRestaurant.gangnamUrl}`,
+        `오늘 점심은 ${gangnamRestaurant.gangnamName} 어때요? ${gangnamRestaurant.gangnamUrl}`,
       );
     }
   });
@@ -22,9 +22,7 @@ const lunchMenu = (app: App) => {
     } else {
       const pickedYongin = Math.floor(Math.random() * yongin.length);
       const yonginRestaurant = yongin[pickedYongin] || [];
-      await say(
-        `오늘 점심은 ${yonginRestaurant.yonginName} 어때요? /n ${yonginRestaurant.yonginUrl}`,
-      );
+      await say(`오늘 점심은 ${yonginRestaurant.yonginName} 어때요? ${yonginRestaurant.yonginUrl}`);
     }
   });
 };
