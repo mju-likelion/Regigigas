@@ -6,6 +6,7 @@ import anonymous from './anonymous';
 import birthday from './birthday';
 import introduce from './introduce';
 import jarvisCalling from './jarvisCalling';
+import lunchMenu from './lunchMenu';
 import randomNumber from './randomNumber';
 
 dotenv.config();
@@ -22,8 +23,9 @@ const app = new App({
 anonymous(app);
 birthday(app);
 introduce(app);
-randomNumber(app);
 jarvisCalling(app);
+lunchMenu(app);
+randomNumber(app);
 
 (async () => {
   await app.start(port);
