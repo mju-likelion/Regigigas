@@ -24,7 +24,7 @@ const jarvisDoing = (r: number): string => {
 
 const jarvisCalling = (app: App) => {
   // "자비스"로 끝나는 명령어에만 반응하기
-  app.message(/자비스 나와/, async ({ message, say }) => {
+  app.message(/자비스 나와/, async ({ say }) => {
     await say('네?');
   });
 
