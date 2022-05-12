@@ -9,9 +9,9 @@ Jarvis는 멋쟁이사자처럼 명지대 10기 슬랙봇입니다.
 - [x] 익명 봇 메시지
 - [x] 주사위 게임
 - [x] 자비스 기능 보기
-- [ ] 생일 축하 알림
-- [ ] 자비스 부르기
-- [ ] 점심 메뉴 추천
+- [x] 생일 축하 알림
+- [x] 자비스 부르기
+- [x] 점심 메뉴 추천
 
 ### 익명 봇 메시지
 
@@ -85,12 +85,15 @@ Jarvis는 멋쟁이사자처럼 명지대 10기 슬랙봇입니다.
 └── tsconfig.json         # TypeScript config
 ```
 
-## 👨‍💻 팀 소개 👨‍💻
+## 👨‍💻 팀원 소개 👨‍💻
 
-|이름|담당 기능|
-|------|---|
-|강민정|익명메시지, 자비스 기능 보기|
-|김수정|자비스 부르기|
-|박민철|점심 메뉴 추천|
-|박소연|생일 축하 알림|
-|배한조|주사위 게임|
+Jarvis를 개발한 팀원을 소개합니다🤗
+
+|이름|강민정|김수정|박민철|박소연|배한조|
+|:---:|:------:|:---:|:------:|:---:|:------:|
+|photo|<img src="https://user-images.githubusercontent.com/61998801/168015143-d8158e58-fa76-4c4c-b0ab-db149ca46e63.jpeg" width="130" height="130">|<img src="https://user-images.githubusercontent.com/61998801/168015272-3c398d49-54f2-468c-a6f7-0acc50757be8.jpeg" width="120" height="140">|<img src="https://user-images.githubusercontent.com/61998801/168015479-a0b29e78-033c-4316-a98b-71115b8209e5.jpg" width="130" height="130">|<img src="https://user-images.githubusercontent.com/61998801/168014279-235d838d-31f5-4331-9973-835ed76f45e0.jpg"  width="130" height="130">|<img src="https://user-images.githubusercontent.com/61998801/168015671-7c8394f1-dc52-4f4d-ad91-5128dc81bdbe.jpg" width="130" height="130">|
+|Github|[ypd06021](https://github.com/ypd06021)|[JJongsKim](https://github.com/JJongsKim)|[Low-ProFiles](https://github.com/Low-ProFiles)|[qkrthdus605](https://github.com/qkrthdus605)|[Bhanjo](https://github.com/Bhanjo)|
+|역할|익명메시지, <br/>자비스 기능 보기|자비스 부르기|점심 메뉴 추천|생일 축하 알림|주사위 게임|
+
+
+
