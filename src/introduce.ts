@@ -37,7 +37,7 @@ function introduce(app: App) {
     // Acknowledge the action
     await ack();
     await say(
-      `익명 봇 메시지, 주사위 게임, 예정(생일 축하 알림, 자비스 부르기, 점심 메뉴 추천, 날씨보기, 사다리타기 등)`,
+      `익명 메시지, 랜덤 주사위, 생일 축하, 자비스 부르기, 점심 메뉴 추천..Jarvis continues.`,
     );
   });
 }
