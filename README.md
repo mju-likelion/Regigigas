@@ -76,7 +76,7 @@ Jarvis는 멋쟁이사자처럼 명지대 10기 슬랙봇입니다.
 │   ├── anonymous.ts      # 자비스 익명메세지
 │   ├── introduce.ts      # 자비스 소개
 │   ├── randomNumber.ts   # 랜덤 주사위
-│   ├── 
+│   ├── birthday.ts       # 생일 축하 알림 
 │   ├── 
 │   └── index.ts          # starts and configures the application
 │
