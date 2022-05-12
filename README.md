@@ -65,8 +65,8 @@ Jarvis는 멋쟁이사자처럼 명지대 10기 슬랙봇입니다.
 ```markdown
 .
 ├── src                   # has all the integrations, features
-│   ├── anonymous.ts      #
-│   ├── introduce.ts      #
+│   ├── anonymous.ts      # 자비스 익명메세지
+│   ├── introduce.ts      # 자비스 소개
 │   ├── 
 │   ├── 
 │   ├── 
