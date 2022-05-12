@@ -34,6 +34,11 @@ Jarvis는 멋쟁이사자처럼 명지대 10기 슬랙봇입니다.
 ### 자비스 기능 보기
 <img width="857" alt="image" src="https://user-images.githubusercontent.com/78525973/165677268-2f60a01d-cad7-453e-8549-a143c4c551b6.png">
 
+### 점심 메뉴 추천
+![image](https://user-images.githubusercontent.com/69390311/168101863-ca4950d6-4d9b-424f-8185-180d911e76bf.png)
+
+> `강남 뭐 먹지` / `용인 뭐 먹지` 명령어를 통해 랜덤 맛집 추천과 링크를 함께 제공해줍니다.
+
 
 ## 🛠 Tech Stack 🛠
 - Node.js
