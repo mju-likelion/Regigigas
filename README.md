@@ -94,6 +94,7 @@ Jarvis는 멋쟁이사자처럼 명지대 10기 슬랙봇입니다.
 │ ├── randomNumber.ts # 랜덤 주사위
 │ ├── birthday.ts # 생일 축하 알림
 │ ├── jarvisCalling.ts # 자비스 부르기
+│ ├── lunchMenu.ts # 점심 메뉴 추천
 │ └── index.ts # starts and configures the application
 │
 │
