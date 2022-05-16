@@ -4,7 +4,7 @@ import fetch from 'cross-fetch';
 const url =
   'https://api.openweathermap.org/data/2.5/weather?lat=37.225004&lon=127.187690&appid=3a3faad2ff8d32bd5b413c9dbdc82048';
 
-function weather(app: App) {
+function weatherApi(app: App) {
   // 현재 학교 날씨
   app.message('자비스 날씨', async ({ message, say }) => {
     await say({
@@ -37,22 +37,23 @@ function weather(app: App) {
     fetch(url)
       .then(response => response.json())
       .then(data => {
-        const youngin = data.weather;
-        const object = youngin[0].main;
+        const { weather } = data;
+        const [test] = weather;
+        const { main } = test;
         // 맑을 때
-        if (object === 'Clear') {
+        if (main === 'Clear') {
           say(`:sunny:`);
         }
         // 구름
-        else if (object === 'Cloud') {
+        else if (main === 'Cloud') {
           say(`:cloud:`);
         }
         // 눈
-        else if (object === 'Snow') {
+        else if (main === 'Snow') {
           say(`:snowflack:`);
         }
         // 비
-        else if (object === 'Rain') {
+        else if (main === 'Rain') {
           say(`:umbrella_with_rain_drops:`);
         }
         // 그 밖
@@ -63,4 +64,4 @@ function weather(app: App) {
   });
 }
 
-export default weather;
+export default weatherApi;
