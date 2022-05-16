@@ -6,7 +6,7 @@ const url =
 
 function weather(app: App) {
   // 현재 학교 날씨
-  app.message('날씨', async ({ message, say }) => {
+  app.message('자비스 날씨', async ({ message, say }) => {
     await say({
       blocks: [
         {
