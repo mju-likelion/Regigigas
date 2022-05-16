@@ -38,28 +38,18 @@ function weatherApi(app: App) {
       .then(response => response.json())
       .then(data => {
         const { weather } = data;
-        const [test] = weather;
-        const { main } = test;
+        const [array] = weather;
+        const { main } = array;
         // 맑을 때
-        if (main === 'Clear') {
-          say(`:sunny:`);
-        }
+        if (main === 'Clear') say(`:sunny:`);
         // 구름
-        else if (main === 'Cloud') {
-          say(`:cloud:`);
-        }
+        else if (main === 'Cloud') say(`:cloud:`);
         // 눈
-        else if (main === 'Snow') {
-          say(`:snowflack:`);
-        }
+        else if (main === 'Snow') say(`:snowflack:`);
         // 비
-        else if (main === 'Rain') {
-          say(`:umbrella_with_rain_drops:`);
-        }
+        else if (main === 'Rain') say(`:umbrella_with_rain_drops:`);
         // 그 밖
-        else {
-          say(`저도 모르겠어요...:loading:`);
-        }
+        else say(`저도 모르겠어요...:loading:`);
       });
   });
 }

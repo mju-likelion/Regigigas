@@ -1,7 +1,7 @@
 import { App } from '@slack/bolt';
 
 function introduce(app: App) {
-  app.message('test', async ({ say }) => {
+  app.message('자비스!', async ({ say }) => {
     await say(`왜불러`);
     // 추가 구현 - 랜덤 응답
   });
