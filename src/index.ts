@@ -8,6 +8,7 @@ import introduce from './introduce';
 import jarvisCalling from './jarvisCalling';
 import lunchMenu from './lunchMenu';
 import randomNumber from './randomNumber';
+import weatherApi from './weather';
 
 dotenv.config();
 const port = 3000;
@@ -26,6 +27,7 @@ introduce(app);
 jarvisCalling(app);
 lunchMenu(app);
 randomNumber(app);
+weatherApi(app);
 
 (async () => {
   await app.start(port);
