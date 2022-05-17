@@ -8,6 +8,7 @@ import introduce from './introduce';
 import jarvisCalling from './jarvisCalling';
 import lunchMenu from './lunchMenu';
 import randomNumber from './randomNumber';
+import teamMaching from './teamMaching';
 import weatherApi from './weather';
 
 dotenv.config();
@@ -28,6 +29,7 @@ jarvisCalling(app);
 lunchMenu(app);
 randomNumber(app);
 weatherApi(app);
+teamMaching(app);
 
 (async () => {
   await app.start(port);
