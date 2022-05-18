@@ -7,7 +7,6 @@ const randomTeamIndex = (from: number = 0, to: number = 5): number =>
 const randomPartition = (teams: number, players: string) => {
   let playerIdx = 0;
   let maxTeamSize = Math.floor(players.length / teams);
-  let breakPoint = 0;
 
   // 팀에 사람을 넣기 위한 2차원 배열 선언 (ES6)
   // eslint-disable-next-line no-array-constructor
@@ -21,10 +20,6 @@ const randomPartition = (teams: number, players: string) => {
       team[teamIdx].push(players[playerIdx]);
       playerIdx += 1;
     }
-
-    // 예기치 못한 무한반복 탈출
-    if (breakPoint > 100) break;
-    breakPoint += 1;
   }
 
   // 남는 사람 배치, 남는 사람들을 넣기 위해 maxTeamSize + 1
@@ -35,8 +30,6 @@ const randomPartition = (teams: number, players: string) => {
       team[teamIdx].push(players[playerIdx]);
       playerIdx += 1;
     }
-    if (breakPoint > 100) break;
-    breakPoint += 1;
   }
 
   return team;
