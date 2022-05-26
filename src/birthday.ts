@@ -30,7 +30,7 @@ function birthday(app: App) {
         await client.chat.scheduleMessage({
           channel: message.channel,
           post_at: new Date(2022, b.month - 1, b.day, 14, 0).getTime() / 1000,
-          text: `<@${b.name}>님 생일을 축하드립니다 :birth::birth2::birth_bomb::birth_loopy::birth_party:`,
+          text: `${b.name}님 생일을 축하드립니다 :birth::birth2::birth_bomb::birth_loopy::birth_party:`,
         });
       });
       await say(`위의 명령어는 치지 말아주세요:meow_wow::help-vibrate:`);
